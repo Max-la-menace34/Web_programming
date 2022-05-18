@@ -73,5 +73,7 @@ The command for pm2 are :
 
 Now you are ready to go!
 
+Connect to http://localhost:3000 and enter test for username and test for password
+
   If you have any probleme : maxime.raillat@epfedu.fr.
 
