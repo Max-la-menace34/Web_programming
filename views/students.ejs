@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Students</title>
+		
+		<link rel="stylesheet" href="/style.css">
+		<script type="text/javascript" src="/students.js"></script>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			
+			
+		</script>
+		
+		<main>
+			<h1>Students</h1>
+			<p class="long-text">Qui a conscience de ses limites,
+								de ses faiblesses, et qui le manifeste par une attitude volontairement modeste et effacée : 
+								Rester humble malgré les honneurs.
+								
+								"Avec de l'entraînement même un raté peut devenir un génie" Rock Lee
+				
+			</p>
+			<ul class = "students">
+				<% students.forEach(function(student) { %>
+				<% const index_student = students.indexOf(student) %>
+					<li><%= student.name %> <%= student.school %> | <a href="/students/<%=index_student%>">Information</a></li>
+				<%})%>
+
+			</ul>
+			
+
+			
+
+		</main>
+
+		<script type="text/javascript">
+			
+			document.addEventListener("DOMContentLoaded", function (event) {
+				let button = document.querySelector("button");
+				button.setAttribute("href","/students/Create");	
+				button.addEventListener("click",function(event){
+					alert("Clicked!!");
+				})
+			});
+		</script>
+		
+		
+	</body>
+	<ul >
+		<a href="http://localhost:3000/">HOME</a>
+		
+	</ul>	
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Student_update</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+<h1>Student</h1>
+<a >The student that you have chosen is : </a>
+
+<ul class = One_student>
+<li><%= One_student.name %> | <%= One_student.school %></li>
+</ul>
+
+<a >You can choose to modify the student or not  </a><br><br>
+
+<form method="post">
+
+    <label for="name">Name:</label><br><br>
+    <input type="text" id="name" name="name" value="<%=One_student.name%>"><br><br>
+
+    <label for="school">School:</label><br><br>
+    <input type="text" id="school" name="school" value="<%=One_student.school%>"><br><br>
+
+    <input type="submit" value="Modify"><button href="/students/">Go Back</button>
+
+    
+</form>
+
+</body>
+</html>

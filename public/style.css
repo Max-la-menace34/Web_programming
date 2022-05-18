@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(200, 173, 127);
+    margin: auto;
+    max-width: 800px;
+
+
+}
+ul {
+    background-color: rgb(182, 143, 77);
+}
+
+@media (max-width: 1000px){
+    p.long-text{
+        display: none;
+    }
+}
